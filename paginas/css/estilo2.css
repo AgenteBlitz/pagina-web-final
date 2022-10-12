@@ -1,0 +1,236 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #0d1117;
+	text-decoration: none;
+	
+	
+}
+
+nav {
+	position: relative;
+	width: 480px;
+	height: 50px;
+	font-weight: 1000;
+	background-color: #1d518500;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #e3e3e3;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+
+
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 99px;
+	left: 0;
+	background-color: #0e3147;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #0e3147;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 107px;
+	left: 210px;
+	background-color: #0b2b3f;
+}
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+	height: 150px;
+	background-color: #161b22;
+	background-size: cover;
+	align-items: center;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo2{
+	position: relative;
+	display: flex;
+	color: #e3e3e3;
+	align-items: center;
+	left: 150px;
+}
+
+.logo2 img{
+	position: relative;
+	height: 50px;
+	padding-right: 20px;
+	padding-left: 200px;
+}
+
+
+
+.logo h2{
+	color: #e3e3e3;
+}
+
+.logo img{
+	position: relative;
+	height: 70px;
+	padding-right: 20px;
+	padding-left: 150px;
+}
+
+.servicios{
+	display: flex;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background: #0e3147;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .10s;
+    margin: 20px 70px;
+
+}
+
+
+
+.card .head{
+    height: 125px;
+    width: 100%;
+    position: relative;
+	display: flex;
+}
+
+
+
+.card .head .img{ 
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card .head img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .description{
+    height: 200px;
+    padding: 40px 10px 20px 20px;
+    border-bottom: 2px solid white;
+	
+}
+
+.card .description h3{
+    color: rgb(145, 184, 5);
+	text-align: center;
+
+}
+
+
+.card .description h4{
+    color: rgb(238, 27, 27);
+     border-bottom: 2px solid white;
+	 font-weight: 1000;
+}
+
+
+.card .description p{
+	font-weight: 600;
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.card .descarga{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .descarga a{
+    text-decoration: none;
+	text-align: center;
+	width: 200px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 254, 254);
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+
+
+.final{
+	
+	text-align: center;
+	border-radius: 50px;
+	height: 60px;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.final li a{
+	text-decoration: none;
+	color: #e3e3e3;
+	padding: 20px;
+	display: block;
+}
+
+.final li{
+	display: inline-block;
+	text-align: center;
+}
+
+.final img{
+	position: relative;
+	height: 50px;
+	padding-right: 20px;
+	padding-left: 150px;
+}
+
+
